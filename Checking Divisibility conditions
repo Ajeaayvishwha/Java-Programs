@@ -1,0 +1,17 @@
+15. Enter a number and print "Hello" if divisible by 3. Print "World" if divisible by 5. And print "HelloWorld" if divisble by 15. Print "No" if the number is divisible by neither 3 nor 5:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      int a = sc.nextInt();
+      if (a%15==0)
+        System.out.println("Hello World");
+      else if (a%5==0)
+        System.out.println("World");
+      else if (a%3==0)
+        System.out.println("Hello");
+      else
+        System.out.println("No");
+  }
+}
