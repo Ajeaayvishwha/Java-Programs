@@ -1,0 +1,21 @@
+20. Take an integer an return 'YES' if the input is a palindrome, or 'NO' if it is not:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int count = 0,f=a;
+      int rev = 0;
+        while(a>0){
+        count = a % 10;
+        rev = rev*10 + count;
+        a /= 10;
+      }
+      if ( f==rev)
+        System.out.println("YES");
+      else
+        System.out.println("NO");
+      
+    }
+}
