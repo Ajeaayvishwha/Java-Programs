@@ -1,0 +1,23 @@
+19. Take a number and return all the even digits of the number:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int f = 0;
+
+        String str = Integer.toString(a);
+
+        for (int i = 0; i < str.length(); i++) {
+            int digit = str.charAt(i) - '0';
+            if (digit % 2 == 0) {
+                System.out.println(digit);
+                f = 1;
+            }
+        }
+
+        if (f == 0)
+            System.out.println("-1");
+    }
+}
