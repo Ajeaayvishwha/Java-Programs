@@ -1,0 +1,21 @@
+11. Take a 3 digit integer, print "YES" if the reversed integer is equal to the input. Print "NO" otherwise:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      int n = sc.nextInt();
+      int o = n;
+        int r = 0;
+        while (n != 0) {
+            int digit = n % 10;
+            r = r * 10 + digit;
+            n /= 10;
+        }
+        if (r == o) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
