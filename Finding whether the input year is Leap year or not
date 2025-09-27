@@ -1,0 +1,15 @@
+10. Take a 4 digit integer denoting a year and print out "YES" if it is a leap year and "NO" if it is not a leap year:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      int a = sc.nextInt();
+      if (a >= 1000 && a<=9999){
+        if(a%4==0)
+          System.out.println("YES");
+        else
+          System.out.println("NO");
+      }
+  }
+}
